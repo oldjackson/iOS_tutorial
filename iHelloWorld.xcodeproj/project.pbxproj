@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C46230D19B2987C00AE9784 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C46230C19B2987C00AE9784 /* main.storyboard */; };
 		3CEE83A219AFDCFF00EB3862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A119AFDCFF00EB3862 /* Foundation.framework */; };
 		3CEE83A419AFDCFF00EB3862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A319AFDCFF00EB3862 /* CoreGraphics.framework */; };
 		3CEE83A619AFDCFF00EB3862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A519AFDCFF00EB3862 /* UIKit.framework */; };
@@ -19,6 +20,9 @@
 		3CEE83BD19AFDCFF00EB3862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A519AFDCFF00EB3862 /* UIKit.framework */; };
 		3CEE83C519AFDCFF00EB3862 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CEE83C319AFDCFF00EB3862 /* InfoPlist.strings */; };
 		3CEE83C719AFDCFF00EB3862 /* iHelloWorldTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CEE83C619AFDCFF00EB3862 /* iHelloWorldTests.m */; };
+		3CFC603E19B378EE000A1E6E /* main_bonum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CFC603D19B378EE000A1E6E /* main_bonum.storyboard */; };
+		3CFC604C19B39E57000A1E6E /* iHWAddMqmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC604A19B39E57000A1E6E /* iHWAddMqmViewController.m */; };
+		3CFC605119B39F42000A1E6E /* iHWFacBonumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CFC604F19B39F42000A1E6E /* iHWFacBonumTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C46230C19B2987C00AE9784 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		3CEE839E19AFDCFF00EB3862 /* iHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEE83A119AFDCFF00EB3862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CEE83A319AFDCFF00EB3862 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,11 @@
 		3CEE83C219AFDCFF00EB3862 /* iHelloWorldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iHelloWorldTests-Info.plist"; sourceTree = "<group>"; };
 		3CEE83C419AFDCFF00EB3862 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3CEE83C619AFDCFF00EB3862 /* iHelloWorldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHelloWorldTests.m; sourceTree = "<group>"; };
+		3CFC603D19B378EE000A1E6E /* main_bonum.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main_bonum.storyboard; sourceTree = "<group>"; };
+		3CFC604919B39E57000A1E6E /* iHWAddMqmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHWAddMqmViewController.h; sourceTree = "<group>"; };
+		3CFC604A19B39E57000A1E6E /* iHWAddMqmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHWAddMqmViewController.m; sourceTree = "<group>"; };
+		3CFC604E19B39F42000A1E6E /* iHWFacBonumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHWFacBonumTableViewController.h; sourceTree = "<group>"; };
+		3CFC604F19B39F42000A1E6E /* iHWFacBonumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHWFacBonumTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +118,12 @@
 			isa = PBXGroup;
 			children = (
 				3CEE83B019AFDCFF00EB3862 /* iHWAppDelegate.h */,
+				3C46230C19B2987C00AE9784 /* main.storyboard */,
+				3CFC604919B39E57000A1E6E /* iHWAddMqmViewController.h */,
+				3CFC604A19B39E57000A1E6E /* iHWAddMqmViewController.m */,
+				3CFC604E19B39F42000A1E6E /* iHWFacBonumTableViewController.h */,
+				3CFC604F19B39F42000A1E6E /* iHWFacBonumTableViewController.m */,
+				3CFC603D19B378EE000A1E6E /* main_bonum.storyboard */,
 				3CEE83B119AFDCFF00EB3862 /* iHWAppDelegate.m */,
 				3CEE83B319AFDCFF00EB3862 /* Images.xcassets */,
 				3CEE83A819AFDCFF00EB3862 /* Supporting Files */,
@@ -221,6 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEE83AC19AFDCFF00EB3862 /* InfoPlist.strings in Resources */,
+				3CFC603E19B378EE000A1E6E /* main_bonum.storyboard in Resources */,
+				3C46230D19B2987C00AE9784 /* main.storyboard in Resources */,
 				3CEE83B419AFDCFF00EB3862 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,7 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFC604C19B39E57000A1E6E /* iHWAddMqmViewController.m in Sources */,
 				3CEE83AE19AFDCFF00EB3862 /* main.m in Sources */,
+				3CFC605119B39F42000A1E6E /* iHWFacBonumTableViewController.m in Sources */,
 				3CEE83B219AFDCFF00EB3862 /* iHWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +458,7 @@
 				3CEE83CC19AFDCFF00EB3862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CEE83CD19AFDCFF00EB3862 /* Build configuration list for PBXNativeTarget "iHelloWorldTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +467,7 @@
 				3CEE83CF19AFDCFF00EB3862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
