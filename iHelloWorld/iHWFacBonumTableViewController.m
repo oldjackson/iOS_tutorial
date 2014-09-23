@@ -7,22 +7,44 @@
 //
 
 #import "iHWFacBonumTableViewController.h"
+#import "iHWMqm.h"
 
 @interface iHWFacBonumTableViewController ()
+
+@property NSMutableArray *mqms;
 
 @end
 
 @implementation iHWFacBonumTableViewController
 
+-(void)loadInitialData
+{
+   iHWMqm *item1 = [[iHWMqm alloc]init];
+   item1.mqmName = @"Lasté";
+   [self.mqms addObject:item1];
+   
+   iHWMqm *item2 = [[iHWMqm alloc]init];
+   item2.mqmName = @"Lozupone";
+   [self.mqms addObject:item2];
+   
+   iHWMqm *item3 = [[iHWMqm alloc]init];
+   item3.mqmName = @"Satyro";
+   [self.mqms addObject:item3];
+   
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+   
+   self.mqms = [[NSMutableArray alloc] init];
+   [self loadInitialData];
+   
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
@@ -38,30 +60,30 @@
 
 #pragma mark - Table view data source
 
-/*- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    //    return 0;
-}*/
+    return 1;
+}
 
-/*- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}*/
 
-/*
+    // Return the number of rows in the section.
+    return [self.mqms count];
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
+   
+   iHWMqm *mqm = [self.mqms objectAtIndex:indexPath.row];
+   cell.textLabel.text = mqm.mqmName;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

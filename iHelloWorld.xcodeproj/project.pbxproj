@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C46230D19B2987C00AE9784 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C46230C19B2987C00AE9784 /* main.storyboard */; };
+		3CA06CED19CA2F4B006B8FAF /* iHWMqm.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA06CEC19CA2F4B006B8FAF /* iHWMqm.m */; };
 		3CEE83A219AFDCFF00EB3862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A119AFDCFF00EB3862 /* Foundation.framework */; };
 		3CEE83A419AFDCFF00EB3862 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A319AFDCFF00EB3862 /* CoreGraphics.framework */; };
 		3CEE83A619AFDCFF00EB3862 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CEE83A519AFDCFF00EB3862 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		3C46230C19B2987C00AE9784 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		3CA06CEB19CA2F4B006B8FAF /* iHWMqm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHWMqm.h; sourceTree = "<group>"; };
+		3CA06CEC19CA2F4B006B8FAF /* iHWMqm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHWMqm.m; sourceTree = "<group>"; };
 		3CEE839E19AFDCFF00EB3862 /* iHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CEE83A119AFDCFF00EB3862 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3CEE83A319AFDCFF00EB3862 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				3CFC604A19B39E57000A1E6E /* iHWAddMqmViewController.m */,
 				3CFC604E19B39F42000A1E6E /* iHWFacBonumTableViewController.h */,
 				3CFC604F19B39F42000A1E6E /* iHWFacBonumTableViewController.m */,
+				3CA06CEB19CA2F4B006B8FAF /* iHWMqm.h */,
+				3CA06CEC19CA2F4B006B8FAF /* iHWMqm.m */,
 				3CFC603D19B378EE000A1E6E /* main_bonum.storyboard */,
 				3CEE83B119AFDCFF00EB3862 /* iHWAppDelegate.m */,
 				3CEE83B319AFDCFF00EB3862 /* Images.xcassets */,
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA06CED19CA2F4B006B8FAF /* iHWMqm.m in Sources */,
 				3CFC604C19B39E57000A1E6E /* iHWAddMqmViewController.m in Sources */,
 				3CEE83AE19AFDCFF00EB3862 /* main.m in Sources */,
 				3CFC605119B39F42000A1E6E /* iHWFacBonumTableViewController.m in Sources */,
