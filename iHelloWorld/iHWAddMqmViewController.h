@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iHWMqm.h"
 
 @interface iHWAddMqmViewController : UIViewController
+
+@property iHWMqm * addedMqm;
 
 @end

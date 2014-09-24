@@ -8,6 +8,7 @@
 
 #import "iHWFacBonumTableViewController.h"
 #import "iHWMqm.h"
+#import "iHWAddMqmViewController.h"
 
 @interface iHWFacBonumTableViewController ()
 
@@ -49,7 +50,13 @@
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-   
+   iHWAddMqmViewController *source = [segue sourceViewController];
+   iHWMqm * mqm = source.addedMqm;
+   if(mqm!=nil)
+   {
+      [self.mqms addObject:mqm];
+      [self.tableView reloadData];
+   }
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,9 +84,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
-   
    iHWMqm *mqm = [self.mqms objectAtIndex:indexPath.row];
    cell.textLabel.text = mqm.mqmName;
+   
+   if (mqm.present) {
+      cell.accessoryType = UITableViewCellAccessoryCheckmark;
+   } else {
+      cell.accessoryType = UITableViewCellAccessoryNone;
+   }
+   
     
     return cell;
 }
@@ -123,21 +136,22 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+   [tableView deselectRowAtIndexPath:indexPath animated:NO];
+
+   iHWMqm *tappedMqm = [self.mqms objectAtIndex:indexPath.row];
+   tappedMqm.present=!tappedMqm.present;
+
+   [tableView reloadRowsAtIndexPaths:@[indexPath]withRowAnimation:UITableViewRowAnimationNone];
+   
+   
+   
 }
-*/
+
 
 @end
